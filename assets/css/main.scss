@@ -1,0 +1,56 @@
+$mainBG: #ebeef3;
+$bg2: #dae1ec;
+$accent: #986dd1;
+$fontColor: #38393a;
+
+body {
+  color: $fontColor;
+  background: $mainBG;
+  height: 100vh;
+  overflow-y: hidden;
+}
+header {
+  padding: 20px;
+  img {
+    width: 200px;
+  }
+}
+
+.wrapper {
+  padding: 80px 20px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 85vh;
+  .col1 {
+    display: grid;
+    padding: 20px 0;
+
+    img {
+      align-self: end;
+      width: 800px;
+      z-index: 1;
+    }
+  }
+  .col2 {
+    padding: 20px;
+    text-align: justify;
+    .intro {
+      font-size: 18pt;
+      line-height: 2;
+    }
+    .next-btn {
+      padding: 20px 0;
+    }
+  }
+}
+
+.col3 {
+  z-index: -1;
+  font-size: 49px;
+  margin-top: -150px;
+  padding-left: -20px !important;
+  img {
+    padding: 0;
+    width: 100vw;
+  }
+}
