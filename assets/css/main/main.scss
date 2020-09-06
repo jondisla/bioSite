@@ -1,4 +1,4 @@
-@import "../template";
+@import "template";
 
 body {
   color: $fontColor;
@@ -8,9 +8,14 @@ body {
   font-family: "Libre Baskerville", serif;
 }
 header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 20px;
-  img {
+  .logo {
     width: 200px;
+  }
+  .mobile-nav {
+    display: none;
   }
 }
 

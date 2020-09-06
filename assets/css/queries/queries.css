@@ -8,6 +8,12 @@
   body {
     overflow-y: visible;
   }
+  header .mobile-nav {
+    width: 80px;
+    display: block;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
   .wrapper {
     display: -ms-grid;
     display: grid;

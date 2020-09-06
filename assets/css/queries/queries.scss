@@ -13,12 +13,6 @@
       .intro {
       }
       .next-btn {
-        button {
-          &:hover {
-          }
-          &:focus {
-          }
-        }
       }
     }
   }
@@ -28,6 +22,14 @@
 @media only screen and (max-width: 1121px) {
   body {
     overflow-y: visible;
+  }
+
+  header {
+    .mobile-nav {
+      width: 80px;
+      display: block;
+      justify-self: end;
+    }
   }
   .wrapper {
     display: grid;
@@ -45,12 +47,6 @@
       .intro {
       }
       .next-btn {
-        button {
-          &:hover {
-          }
-          &:focus {
-          }
-        }
       }
     }
   }

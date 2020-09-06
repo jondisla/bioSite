@@ -7,11 +7,19 @@ body {
 }
 
 header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   padding: 20px;
 }
 
-header img {
+header .logo {
   width: 200px;
+}
+
+header .mobile-nav {
+  display: none;
 }
 
 .wrapper {
