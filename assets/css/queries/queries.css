@@ -1,0 +1,31 @@
+@media only screen and (max-width: 1475px) {
+  .wrapper .col1 img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1121px) {
+  body {
+    overflow-y: visible;
+  }
+  .wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .wrapper .col1 {
+    padding: 0;
+  }
+  .wrapper .col1 img {
+    width: 100%;
+  }
+  .wrapper .col2 {
+    background: #dae1ec;
+  }
+  .timeline {
+    display: none;
+  }
+}
+/*# sourceMappingURL=queries.css.map */

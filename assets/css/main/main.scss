@@ -1,7 +1,4 @@
-$mainBG: #ebeef3;
-$bg2: #dae1ec;
-$accent: #986dd1;
-$fontColor: #38393a;
+@import "../template";
 
 body {
   color: $fontColor;
@@ -69,13 +66,13 @@ header {
 
 .timeline {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   color: rgb(201, 201, 201);
   padding: 0;
   font-size: 30pt;
   .col3 {
     z-index: -1;
-    grid-column: 1/4;
+    grid-column: 1/5;
     margin-top: -180px;
     padding-left: -20px !important;
     img {
@@ -85,9 +82,10 @@ header {
   }
   .years {
     z-index: 1;
-    grid-column: 3;
+    grid-column: 3/5;
     grid-row: 2;
     margin-top: -140px;
+    text-align: center;
     li {
       padding: 0 10px;
       display: inline;
