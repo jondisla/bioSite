@@ -3,6 +3,7 @@ body {
   background: #ebeef3;
   height: 100vh;
   overflow-y: hidden;
+  font-family: "Libre Baskerville", serif;
 }
 
 header {
@@ -42,12 +43,38 @@ header img {
 }
 
 .wrapper .col2 .intro {
-  font-size: 18pt;
+  font-size: 16pt;
   line-height: 2;
 }
 
 .wrapper .col2 .next-btn {
   padding: 20px 0;
+}
+
+.wrapper .col2 .next-btn button {
+  font-family: "Libre Baskerville", serif;
+  color: #38393a;
+  background: #986dd1;
+  font-size: 20pt;
+  width: 130px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.wrapper .col2 .next-btn button:hover {
+  background-color: #dae1ec;
+  color: #986dd1;
+  cursor: pointer;
+}
+
+.wrapper .col2 .next-btn button:focus {
+  outline: 0;
 }
 
 .timeline {
@@ -86,9 +113,10 @@ header img {
 .timeline .years li {
   padding: 0 10px;
   display: inline;
+  font-size: 23pt;
 }
 
 .timeline .years .active {
-  color: #38393a;
+  color: #986dd1;
 }
 /*# sourceMappingURL=main.css.map */

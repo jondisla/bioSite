@@ -8,6 +8,7 @@ body {
   background: $mainBG;
   height: 100vh;
   overflow-y: hidden;
+  font-family: "Libre Baskerville", serif;
 }
 header {
   padding: 20px;
@@ -35,11 +36,33 @@ header {
     padding: 20px;
     text-align: justify;
     .intro {
-      font-size: 18pt;
+      font-size: 16pt;
       line-height: 2;
     }
     .next-btn {
       padding: 20px 0;
+      button {
+        font-family: "Libre Baskerville", serif;
+        color: $fontColor;
+        background: $accent;
+        font-size: 20pt;
+        width: 130px;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        transition-duration: 0.4s;
+        &:hover {
+          background-color: $bg2;
+          color: $accent;
+          cursor: pointer;
+        }
+        &:focus {
+          outline: 0;
+        }
+      }
     }
   }
 }
@@ -68,9 +91,10 @@ header {
     li {
       padding: 0 10px;
       display: inline;
+      font-size: 23pt;
     }
     .active {
-      color: $fontColor;
+      color: $accent;
     }
   }
 }
