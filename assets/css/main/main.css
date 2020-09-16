@@ -2,6 +2,7 @@ body {
   color: #38393a;
   background: #ebeef3;
   height: 100vh;
+  overflow-y: hidden;
   font-family: "Libre Baskerville", serif;
 }
 
@@ -21,45 +22,78 @@ header .mobile-nav {
   display: none;
 }
 
-#year-2011, #year-2014, #year-2018, #year-2020 {
-  padding: 80px 20px 0;
-  display: -ms-grid;
-  display: grid;
-  display: none;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  height: 85vh;
+h1 {
+  font-size: 3.052em;
 }
 
-#year-2011 .col1, #year-2014 .col1, #year-2018 .col1, #year-2020 .col1 {
-  display: -ms-grid;
-  display: grid;
+h2 {
+  font-size: 2.441em;
+}
+
+h3 {
+  font-size: 1.953em;
+}
+
+h4 {
+  font-size: 1.563em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+#year-2011,
+#year-2014,
+#year-2018,
+#year-2020 {
+  padding: 50px 0px 0;
+  height: 100vh;
+  overflow-y: hidden;
+  display: none;
+}
+
+#year-2011 .col1,
+#year-2014 .col1,
+#year-2018 .col1,
+#year-2020 .col1 {
   padding: 20px 0;
 }
 
-#year-2011 .col1 img, #year-2014 .col1 img, #year-2018 .col1 img, #year-2020 .col1 img {
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+#year-2011 .col1 img,
+#year-2014 .col1 img,
+#year-2018 .col1 img,
+#year-2020 .col1 img {
   width: 900px;
   z-index: 1;
 }
 
-#year-2011 .col2, #year-2014 .col2, #year-2018 .col2, #year-2020 .col2 {
+#year-2011 .col2,
+#year-2014 .col2,
+#year-2018 .col2,
+#year-2020 .col2 {
   padding: 20px;
   text-align: justify;
 }
 
-#year-2011 .col2 .intro, #year-2014 .col2 .intro, #year-2018 .col2 .intro, #year-2020 .col2 .intro {
+#year-2011 .col2 .intro,
+#year-2014 .col2 .intro,
+#year-2018 .col2 .intro,
+#year-2020 .col2 .intro {
   font-size: 16pt;
   line-height: 2;
 }
 
-#year-2011 .col2 .next-btn, #year-2014 .col2 .next-btn, #year-2018 .col2 .next-btn, #year-2020 .col2 .next-btn {
+#year-2011 .col2 .next-btn,
+#year-2014 .col2 .next-btn,
+#year-2018 .col2 .next-btn,
+#year-2020 .col2 .next-btn {
   padding: 20px 0;
 }
 
-#year-2011 .col2 .next-btn button, #year-2014 .col2 .next-btn button, #year-2018 .col2 .next-btn button, #year-2020 .col2 .next-btn button {
+#year-2011 .col2 .next-btn button,
+#year-2014 .col2 .next-btn button,
+#year-2018 .col2 .next-btn button,
+#year-2020 .col2 .next-btn button {
   font-family: "Libre Baskerville", serif;
   color: #38393a;
   background: #986dd1;
@@ -75,21 +109,33 @@ header .mobile-nav {
           transition-duration: 0.4s;
 }
 
-#year-2011 .col2 .next-btn button:hover, #year-2014 .col2 .next-btn button:hover, #year-2018 .col2 .next-btn button:hover, #year-2020 .col2 .next-btn button:hover {
+#year-2011 .col2 .next-btn button:hover,
+#year-2014 .col2 .next-btn button:hover,
+#year-2018 .col2 .next-btn button:hover,
+#year-2020 .col2 .next-btn button:hover {
   background-color: #dae1ec;
   color: #986dd1;
   cursor: pointer;
 }
 
-#year-2011 .col2 .next-btn button:focus, #year-2014 .col2 .next-btn button:focus, #year-2018 .col2 .next-btn button:focus, #year-2020 .col2 .next-btn button:focus {
+#year-2011 .col2 .next-btn button:focus,
+#year-2014 .col2 .next-btn button:focus,
+#year-2018 .col2 .next-btn button:focus,
+#year-2020 .col2 .next-btn button:focus {
   outline: 0;
 }
 
-#year-2011 .active, #year-2014 .active, #year-2018 .active, #year-2020 .active {
+#year-2011 .active,
+#year-2014 .active,
+#year-2018 .active,
+#year-2020 .active {
   display: block;
 }
 
-#year-2011 .hidden, #year-2014 .hidden, #year-2018 .hidden, #year-2020 .hidden {
+#year-2011 .hidden,
+#year-2014 .hidden,
+#year-2018 .hidden,
+#year-2020 .hidden {
   display: none;
 }
 
@@ -108,7 +154,7 @@ header .mobile-nav {
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-column: 1/5;
-  margin-top: -180px;
+  margin-top: -280px;
   padding-left: -20px !important;
 }
 
@@ -124,7 +170,7 @@ header .mobile-nav {
   grid-column: 3/5;
   -ms-grid-row: 2;
   grid-row: 2;
-  margin-top: -140px;
+  margin-top: -240px;
   text-align: center;
 }
 
@@ -136,5 +182,22 @@ header .mobile-nav {
 
 .timeline .years .active {
   color: #986dd1;
+}
+
+#start {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.naviBtn {
+  background: #986dd1;
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=main.css.map */

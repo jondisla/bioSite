@@ -4,7 +4,7 @@ body {
   color: $fontColor;
   background: $mainBG;
   height: 100vh;
-  // overflow-y: hidden;
+  overflow-y: hidden;
   font-family: "Libre Baskerville", serif;
 }
 header {
@@ -19,23 +19,37 @@ header {
   }
 }
 
-#year-2011,#year-2014,#year-2018, #year-2020 {
-  padding: 80px 20px 0;
-  display: grid;
-  display:none;
-  grid-template-columns: 1fr 1fr;
-  height: 85vh;
-  .col1 {
-    display: grid;
-    padding: 20px 0;
+h1 {
+  font-size: 3.052em;
+}
+h2 {
+  font-size: 2.441em;
+}
+h3 {
+  font-size: 1.953em;
+}
+h4 {
+  font-size: 1.563em;
+}
+h5 {
+  font-size: 1.25em;
+}
 
+#year-2011,
+#year-2014,
+#year-2018,
+#year-2020 {
+  padding: 50px 0px 0;
+  height: 100vh;
+  overflow-y: hidden;
+  display: none;
+  .col1 {
+    padding: 20px 0;
     img {
-      align-self: end;
       width: 900px;
       z-index: 1;
     }
   }
-
   .col2 {
     padding: 20px;
     text-align: justify;
@@ -69,11 +83,11 @@ header {
       }
     }
   }
-  .active{
-    display:block;
+  .active {
+    display: block;
   }
-  .hidden{
-    display:none;
+  .hidden {
+    display: none;
   }
 }
 .timeline {
@@ -85,7 +99,7 @@ header {
   .col3 {
     z-index: -1;
     grid-column: 1/5;
-    margin-top: -180px;
+    margin-top: -280px;
     padding-left: -20px !important;
     img {
       padding: 0;
@@ -96,7 +110,7 @@ header {
     z-index: 1;
     grid-column: 3/5;
     grid-row: 2;
-    margin-top: -140px;
+    margin-top: -240px;
     text-align: center;
     li {
       padding: 0 10px;
@@ -107,4 +121,20 @@ header {
       color: $accent;
     }
   }
+}
+
+#start {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.naviBtn {
+  background: $accent;
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
 }
