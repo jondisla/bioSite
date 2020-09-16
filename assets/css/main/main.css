@@ -2,7 +2,6 @@ body {
   color: #38393a;
   background: #ebeef3;
   height: 100vh;
-  overflow-y: hidden;
   font-family: "Libre Baskerville", serif;
 }
 
@@ -22,22 +21,23 @@ header .mobile-nav {
   display: none;
 }
 
-.wrapper {
+#year-2011, #year-2014, #year-2018, #year-2020 {
   padding: 80px 20px 0;
   display: -ms-grid;
   display: grid;
+  display: none;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   height: 85vh;
 }
 
-.wrapper .col1 {
+#year-2011 .col1, #year-2014 .col1, #year-2018 .col1, #year-2020 .col1 {
   display: -ms-grid;
   display: grid;
   padding: 20px 0;
 }
 
-.wrapper .col1 img {
+#year-2011 .col1 img, #year-2014 .col1 img, #year-2018 .col1 img, #year-2020 .col1 img {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
@@ -45,21 +45,21 @@ header .mobile-nav {
   z-index: 1;
 }
 
-.wrapper .col2 {
+#year-2011 .col2, #year-2014 .col2, #year-2018 .col2, #year-2020 .col2 {
   padding: 20px;
   text-align: justify;
 }
 
-.wrapper .col2 .intro {
+#year-2011 .col2 .intro, #year-2014 .col2 .intro, #year-2018 .col2 .intro, #year-2020 .col2 .intro {
   font-size: 16pt;
   line-height: 2;
 }
 
-.wrapper .col2 .next-btn {
+#year-2011 .col2 .next-btn, #year-2014 .col2 .next-btn, #year-2018 .col2 .next-btn, #year-2020 .col2 .next-btn {
   padding: 20px 0;
 }
 
-.wrapper .col2 .next-btn button {
+#year-2011 .col2 .next-btn button, #year-2014 .col2 .next-btn button, #year-2018 .col2 .next-btn button, #year-2020 .col2 .next-btn button {
   font-family: "Libre Baskerville", serif;
   color: #38393a;
   background: #986dd1;
@@ -75,14 +75,22 @@ header .mobile-nav {
           transition-duration: 0.4s;
 }
 
-.wrapper .col2 .next-btn button:hover {
+#year-2011 .col2 .next-btn button:hover, #year-2014 .col2 .next-btn button:hover, #year-2018 .col2 .next-btn button:hover, #year-2020 .col2 .next-btn button:hover {
   background-color: #dae1ec;
   color: #986dd1;
   cursor: pointer;
 }
 
-.wrapper .col2 .next-btn button:focus {
+#year-2011 .col2 .next-btn button:focus, #year-2014 .col2 .next-btn button:focus, #year-2018 .col2 .next-btn button:focus, #year-2020 .col2 .next-btn button:focus {
   outline: 0;
+}
+
+#year-2011 .active, #year-2014 .active, #year-2018 .active, #year-2020 .active {
+  display: block;
+}
+
+#year-2011 .hidden, #year-2014 .hidden, #year-2018 .hidden, #year-2020 .hidden {
+  display: none;
 }
 
 .timeline {
