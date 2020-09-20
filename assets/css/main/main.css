@@ -163,7 +163,7 @@ h5 {
   width: 100%;
 }
 
-.timeline .years {
+.timeline #years {
   z-index: 1;
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
@@ -174,13 +174,13 @@ h5 {
   text-align: center;
 }
 
-.timeline .years li {
+.timeline #years li {
   padding: 0 10px;
   display: inline;
   font-size: 23pt;
 }
 
-.timeline .years .active {
+.timeline #years .active {
   color: #986dd1;
 }
 
