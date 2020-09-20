@@ -35,6 +35,11 @@ window.onload = () => {
       year18.setAttribute("style", "display:none;");
       timeline.children[2].classList.remove("active");
       timeline.children[3].classList.add("active");
+    } else {
+      year11.setAttribute("style", "display:block;");
+      year20.setAttribute("style", "display:none;");
+      timeline.children[3].classList.remove("active");
+      timeline.children[0].classList.add("active");
     }
 
     //   let test = document.getElementsByClassName("yearsul");

@@ -79,6 +79,8 @@ h5 {
 #year-2014 .col2 .intro,
 #year-2018 .col2 .intro,
 #year-2020 .col2 .intro {
+  padding-top: 20px;
+  height: 350px;
   font-size: 16pt;
   line-height: 2;
 }
