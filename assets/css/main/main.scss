@@ -1,3 +1,4 @@
+//import all the variables for colors
 @import "template";
 
 body {
@@ -19,6 +20,7 @@ header {
   }
 }
 
+//font scale
 h1 {
   font-size: 3.052em;
 }
@@ -35,6 +37,7 @@ h5 {
   font-size: 1.25em;
 }
 
+//Main
 #year-2011,
 #year-2014,
 #year-2018,
@@ -44,14 +47,14 @@ h5 {
   overflow-y: hidden;
   display: none;
   .col1 {
-    padding: 20px 0;
+    padding: 20px 0 0 40px;
     img {
       width: 900px;
       z-index: 1;
     }
   }
   .col2 {
-    padding: 20px;
+    padding: 20px 40px 0 0;
     text-align: justify;
     .intro {
       padding-top: 20px;

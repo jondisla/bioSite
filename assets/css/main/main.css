@@ -56,7 +56,7 @@ h5 {
 #year-2014 .col1,
 #year-2018 .col1,
 #year-2020 .col1 {
-  padding: 20px 0;
+  padding: 20px 0 0 40px;
 }
 
 #year-2011 .col1 img,
@@ -71,7 +71,7 @@ h5 {
 #year-2014 .col2,
 #year-2018 .col2,
 #year-2020 .col2 {
-  padding: 20px;
+  padding: 20px 40px 0 0;
   text-align: justify;
 }
 
