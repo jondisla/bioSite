@@ -79,8 +79,11 @@
     padding: 0 20px 0 0;
     padding: 20px !important;
   }
-  .naviBtn {
-    margin-top: 20vh;
+  .wrapper .col2 img {
+    width: 30% !important;
+  }
+  .wrapper .col2 p {
+    font-size: 18px;
   }
   .timeline {
     display: none;

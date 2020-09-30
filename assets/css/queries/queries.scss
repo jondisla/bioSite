@@ -91,11 +91,17 @@
       padding: 0 20px 0 0;
       // height: 80vh;
       padding: 20px !important;
+      img {
+        width: 30% !important;
+      }
+      p {
+        font-size: 18px;
+      }
     }
   }
 
   .naviBtn {
-    margin-top: 20vh;
+    // margin-top: 20vh;
   }
 
   .timeline {
