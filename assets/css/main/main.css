@@ -46,24 +46,30 @@ h5 {
 #year-2014,
 #year-2018,
 #year-2020 {
-  padding: 50px 0px 0;
-  height: 100vh;
-  overflow-y: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   display: none;
+  height: 90vh;
+  gap: 20px;
 }
 
 #year-2011 .col1,
 #year-2014 .col1,
 #year-2018 .col1,
 #year-2020 .col1 {
-  padding: 20px 0 0 40px;
+  margin-top: 20px;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
 }
 
 #year-2011 .col1 img,
 #year-2014 .col1 img,
 #year-2018 .col1 img,
 #year-2020 .col1 img {
-  width: 900px;
+  width: 800px;
   z-index: 1;
 }
 
@@ -80,51 +86,16 @@ h5 {
 #year-2018 .col2 .intro,
 #year-2020 .col2 .intro {
   padding-top: 20px;
-  height: 350px;
+  height: 500px;
   font-size: 16pt;
   line-height: 2;
 }
 
-#year-2011 .col2 .next-btn,
-#year-2014 .col2 .next-btn,
-#year-2018 .col2 .next-btn,
-#year-2020 .col2 .next-btn {
-  padding: 20px 0;
-}
-
-#year-2011 .col2 .next-btn button,
-#year-2014 .col2 .next-btn button,
-#year-2018 .col2 .next-btn button,
-#year-2020 .col2 .next-btn button {
-  font-family: "Libre Baskerville", serif;
-  color: #38393a;
-  background: #986dd1;
-  font-size: 20pt;
-  width: 130px;
-  height: 50px;
-  border-radius: 10px;
-  border: none;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
-}
-
-#year-2011 .col2 .next-btn button:hover,
-#year-2014 .col2 .next-btn button:hover,
-#year-2018 .col2 .next-btn button:hover,
-#year-2020 .col2 .next-btn button:hover {
-  background-color: #dae1ec;
-  color: #986dd1;
-  cursor: pointer;
-}
-
-#year-2011 .col2 .next-btn button:focus,
-#year-2014 .col2 .next-btn button:focus,
-#year-2018 .col2 .next-btn button:focus,
-#year-2020 .col2 .next-btn button:focus {
-  outline: 0;
+#year-2011 .col2 .intro p,
+#year-2014 .col2 .intro p,
+#year-2018 .col2 .intro p,
+#year-2020 .col2 .intro p {
+  padding-bottom: 20px;
 }
 
 #year-2011 .active,
@@ -156,7 +127,7 @@ h5 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-column: 1/5;
-  margin-top: -280px;
+  margin-top: -180px;
   padding-left: -20px !important;
 }
 
@@ -172,7 +143,7 @@ h5 {
   grid-column: 3/5;
   -ms-grid-row: 2;
   grid-row: 2;
-  margin-top: -240px;
+  margin-top: -140px;
   text-align: center;
 }
 
@@ -187,12 +158,32 @@ h5 {
 }
 
 #start {
-  position: absolute;
+  display: -ms-grid;
+  display: grid;
   text-align: center;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-grid-columns: 3fr 6fr 3fr;
+      grid-template-columns: 3fr 6fr 3fr;
+  height: 100vh;
+  place-self: center;
+  cursor: pointer;
+}
+
+#start h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#start figure {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0 20px;
+}
+
+#start figure img {
+  width: 100%;
+  border-radius: 15px 50px;
 }
 
 .naviBtn {
@@ -201,5 +192,33 @@ h5 {
   width: 100px;
   height: 40px;
   border-radius: 10px;
+}
+
+.naviBtn button {
+  font-family: "Libre Baskerville", serif;
+  color: #38393a;
+  background: #986dd1;
+  font-size: 20pt;
+  width: 130px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.naviBtn:hover {
+  background-color: #dae1ec;
+  color: #986dd1;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.naviBtn:focus {
+  outline: 0;
 }
 /*# sourceMappingURL=main.css.map */

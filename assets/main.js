@@ -7,8 +7,6 @@ window.onload = () => {
 
   //IDs of year bottom year indicator
   let timeline = document.getElementById("yearsUl");
-
-  console.log(timeline.children[1]);
   //Get ID of every button for each year
   begin.addEventListener("click", nextYear);
   document.getElementById("nextBtn2011").addEventListener("click", nextYear);
@@ -18,25 +16,26 @@ window.onload = () => {
 
   function nextYear() {
     if (this.id === "start") {
-      year11.setAttribute("style", "display:block;");
+      year11.setAttribute("style", "display:grid;");
+      timeline.setAttribute("style", "display:block;");
       begin.setAttribute("style", "display:none;");
     } else if (this.id === "nextBtn2011") {
-      year14.setAttribute("style", "display:block;");
+      year14.setAttribute("style", "display:grid;");
       year11.setAttribute("style", "display:none;");
       timeline.children[0].classList.remove("active");
       timeline.children[1].classList.add("active");
     } else if (this.id === "nextBtn2014") {
-      year18.setAttribute("style", "display:block;");
+      year18.setAttribute("style", "display:grid;");
       year14.setAttribute("style", "display:none;");
       timeline.children[1].classList.remove("active");
       timeline.children[2].classList.add("active");
     } else if (this.id === "nextBtn2018") {
-      year20.setAttribute("style", "display:block;");
+      year20.setAttribute("style", "display:grid;");
       year18.setAttribute("style", "display:none;");
       timeline.children[2].classList.remove("active");
       timeline.children[3].classList.add("active");
     } else {
-      year11.setAttribute("style", "display:block;");
+      year11.setAttribute("style", "display:grid;");
       year20.setAttribute("style", "display:none;");
       timeline.children[3].classList.remove("active");
       timeline.children[0].classList.add("active");

@@ -42,14 +42,16 @@ h5 {
 #year-2014,
 #year-2018,
 #year-2020 {
-  padding: 50px 0px 0;
-  height: 100vh;
-  overflow-y: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   display: none;
+  height: 90vh;
+  gap: 20px;
   .col1 {
-    padding: 20px 0 0 40px;
+    margin-top: 20px;
+    align-self: end;
     img {
-      width: 900px;
+      width: 800px;
       z-index: 1;
     }
   }
@@ -58,33 +60,11 @@ h5 {
     text-align: justify;
     .intro {
       padding-top: 20px;
-      height: 350px;
+      height: 500px;
       font-size: 16pt;
       line-height: 2;
-    }
-    .next-btn {
-      padding: 20px 0;
-      button {
-        font-family: "Libre Baskerville", serif;
-        color: $fontColor;
-        background: $accent;
-        font-size: 20pt;
-        width: 130px;
-        height: 50px;
-        border-radius: 10px;
-        border: none;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        transition-duration: 0.4s;
-        &:hover {
-          background-color: $bg2;
-          color: $accent;
-          cursor: pointer;
-        }
-        &:focus {
-          outline: 0;
-        }
+      p {
+        padding-bottom: 20px;
       }
     }
   }
@@ -95,6 +75,7 @@ h5 {
     display: none;
   }
 }
+
 .timeline {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -104,7 +85,7 @@ h5 {
   .col3 {
     z-index: -1;
     grid-column: 1/5;
-    margin-top: -280px;
+    margin-top: -180px;
     padding-left: -20px !important;
     img {
       padding: 0;
@@ -115,7 +96,7 @@ h5 {
     z-index: 1;
     grid-column: 3/5;
     grid-row: 2;
-    margin-top: -240px;
+    margin-top: -140px;
     text-align: center;
     li {
       padding: 0 10px;
@@ -129,11 +110,25 @@ h5 {
 }
 
 #start {
-  position: absolute;
+  display: grid;
   text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  grid-template-columns: 3fr 6fr 3fr;
+  height: 100vh;
+  place-self: center;
+
+  cursor: pointer;
+  h1 {
+    align-self: center;
+  }
+  figure {
+    align-self: center;
+    padding: 0 20px;
+
+    img {
+      width: 100%;
+      border-radius: 15px 50px;
+    }
+  }
 }
 
 .naviBtn {
@@ -142,4 +137,27 @@ h5 {
   width: 100px;
   height: 40px;
   border-radius: 10px;
+  button {
+    font-family: "Libre Baskerville", serif;
+    color: $fontColor;
+    background: $accent;
+    font-size: 20pt;
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    transition-duration: 0.4s;
+  }
+  &:hover {
+    background-color: $bg2;
+    color: $accent;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+  &:focus {
+    outline: 0;
+  }
 }
